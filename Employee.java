@@ -1,35 +1,38 @@
 
-public class Employee {
+public class Employee extends Person {
 	
-	private String Name;
-	private String ssn;
-	private String dateOfBirth;
+	//Derek Clothier
 	
-	public String getName() {
-		return Name;
+	private String Office;
+	
+	public String getOffice() {
+		return Office;
 	}
-	public void setName(String name) {
-		Name = name;
-	}
-	public String getSsn() {
-		return ssn;
-	}
-	public void setSsn(String ssn) {
-		this.ssn = ssn;
-	}
-	public String getDateOfBirth() {
-		return dateOfBirth;
-	}
-	public void setDateOfBirth(String dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
+	public void setOffice(String office) {
+		Office = office;
 	}
 	
-	void paySalary(){
-		
+	private String Salary;
+	
+	public String getSalary() {
+		return Salary;
+	}
+	public void setSalary(String salary) {
+		Salary = salary;
 	}
 	
-	void takeVacation() {
-		
+	private MyDate dateHired = new MyDate();
+
+	public MyDate getDateHired() {
+		System.out.println(dateHired.getDate());
+		return dateHired;
 	}
+	public void setDateHired(MyDate dateHired) {
+		this.dateHired = dateHired;
+	}
+	
+	
+	
+	
 
 }
